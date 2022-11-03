@@ -1,0 +1,202 @@
+/*Universal*/
+* {
+    font-family: Georgia, 'Times New Roman';
+    margin: 0%;
+    padding: 0%;
+}
+
+/*Color Palette*/
+:root {
+    --primary-color: rgb(10,34,57);
+    --secondary-color:  rgb(83, 162, 190);
+    --tertiary-color: rgb(29,132,181);
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    height: 100px;
+    background-color: var(--secondary-color);
+    border-bottom: solid var(--tertiary-color) 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 15px;
+
+}
+
+header h1 {
+    float: left;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: right;
+}
+
+nav a {
+   padding: 25px;
+   color:black;
+}
+
+nav a:hover {
+    size: 20%;
+}
+/*Nav Links*/
+
+
+
+.hero-banner div img {
+    background: var(--primary-color);
+    background-image: url("./Seattle_3_banner.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid var(--tertiary-color);
+    object-fit: cover;
+    width: 100%;
+}
+
+main {
+    background-color: var(--primary-color);
+    height: 100%-150px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-top: var(--tertiary-color) solid 5px;
+}
+
+/*styles for about me section*/
+
+.about-levi {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-levi h2 {
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.about-levi p {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    line-height: 1.5;
+    border-left: white solid 1px;
+    align-items: center;
+}
+
+.bio-pic {
+    padding: 40px;
+}
+
+.work-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.work-1 h2 {
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+
+.work-1 img {
+    border: solid 5px var(--tertiary-color);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5%;
+}
+
+.work-1 img:hover {
+    opacity: .5;
+    border: 10px solid black;
+}
+
+.work-2-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.work-2-3 img {
+   flex: 50%;
+   width: 25%;
+   border: solid 3px var(--tertiary-color);
+   border-radius: 5%;
+}
+
+.work-2-3 img:hover {
+    opacity: .5;
+    border: 10px solid black;
+}
+
+.work-even {
+    margin-left: 25%;
+}
+
+.work-odd {
+    margin-right: 25%;
+}
+
+.work-4-5 {
+    display: flex;
+    justify-content: center;
+}
+
+.work-4-5 img {
+    flex: 50%;
+    width: 25%;
+    border: solid 3px var(--tertiary-color);
+    border-radius: 5%;
+}
+
+.work-4-5 img:hover {
+    opacity: .5;
+    border: 10px solid black;
+}
+
+.contact-levi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-levi h2 {
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+
+.contact-levi p {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    line-height: 1.5;
+    justify-content: space-between;
+    color: white;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-top: solid var(--tertiary-color) 5px;
+    text-align: center;
+  }
+
+
+
