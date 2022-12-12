@@ -37,20 +37,13 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    float: right;
+    
 }
 
 nav a {
    padding: 25px;
    color:black;
 }
-
-nav a:hover {
-    size: 20%;
-}
-/*Nav Links*/
-
-
 
 .hero-banner div img {
     background: var(--primary-color);
@@ -93,7 +86,6 @@ main {
     flex-direction: row;
     padding: 40px;
     line-height: 1.5;
-    border-left: white solid 1px;
     align-items: center;
 }
 
@@ -101,6 +93,7 @@ main {
     padding: 40px;
 }
 
+/*styles work section*/
 .work-1 {
     display: flex;
     flex-direction: row;
@@ -168,6 +161,7 @@ main {
     border: 10px solid black;
 }
 
+/*styles for contact section*/
 .contact-levi {
     display: flex;
     flex-direction: row;
@@ -198,5 +192,92 @@ footer {
     text-align: center;
   }
 
+/*Responsiveness*/
+
+@media screen and (max-width: 980px) {
+ header {
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
+
+ header h1 {
+    width: 100%;
+ }
+
+ header nav {
+    justify-content: center;
+ }
+
+ .about-levi {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-levi h2 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.about-levi p {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    line-height: 1.5;
+    border-left: white solid 1px;
+    align-items: center;
+}
+
+.bio-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-banner {
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.contact-levi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-levi h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-levi p {
+    display: flex;
+    flex-direction: column;
+}
+}
 
 
+@media screen and (max-width: 500px) {
+ header {
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
+
+ header h1 {
+    display: flex;
+    flex-direction: column;
+ }
+
+ header nav {
+    display: block;
+
+}
+}
